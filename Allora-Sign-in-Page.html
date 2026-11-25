@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Allora Sign-in</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+ 
+<body class="bg-light"></body>
+<div class="container mt-4">
+    <h2 class="text-center" style="font-family: Forte">--Allora - Sign-in Page--</h2>
+    <hr>
+    <form>
+
+        <h4 style="font-family: Maiandra GD"> <b>-Customer Details-</b></h4>
+        <div class="mb-3">
+            <label><b>Full Name:</b></label>
+            <input type="text" class="form-control" name="name" required placeholder="Full Name">
+        </div>
+        <div class="mb-3">
+            <label><b>Email:</b></label>
+            <input type="email" class="form-control" name="email" required placeholder="ex:- xyz@gmail.com">
+        </div>
+        <div class="mb-3">
+            <label><b>Phone Number:</b></label>
+            <input type="tel" class="form-control" name="phone" pattern="[0-9]{10}" required>
+        </div>
+        <hr>
+        <h4 style="font-family: Maiandra GD"> <b>-Delivery Address-</b></h4>
+        <div class="mb-3">
+            <label><b>House No. / Building:</b></label>
+            <input type="text" class="form-control" name="house" required>
+        </div>
+        <div class="mb-3">
+            <label><b>Street / Area:</b></label>
+            <input type="text" class="form-control" name="area" required>
+        </div>
+        <div class="mb-3">
+            <label><b>City:</b></label>
+            <input type="text" class="form-control" name="city" required>
+        </div>
+        <div class="mb-3">
+            <label><b>State:</b></label>
+            <select class="form-select" name="state" required>
+                <option value="">Select State</option>
+                <option>Maharashtra</option>
+                <option>Gujarat</option>
+                <option>Rajasthan</option>
+                <option>Madhya Pradesh</option>
+                <option>Other</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label><b>PIN Code:</b></label>
+            <input type="text" class="form-control" name="pincode" pattern="[0-9]{6}" required>
+        </div>
+        <div class="mb-3">
+            <label><b>Landmark:</b></label>
+            <input type="text" class="form-control" name="landmark">
+        </div>
+        <hr>
+        <h4 style="font-family: Maiandra GD"><strong>For Checking Out :-</strong></h4>
+        <br>
+        <h4 style="font-family: Maiandra GD"><b>-Payment Details-</b></h4>
+        <div class="mb-3">
+            <label><b>Select Payment Method:</b></label><br>
+            <input type="radio" name="payment" value="COD" required>
+            Cash on Delivery <br>
+            <input type="radio" name="payment" value="UPI">
+            UPI Payment <br>
+            <input type="radio" name="payment" value="Card">
+            Debit / Credit Card <br>
+            <input type="radio" name="payment" value="Net Banking">
+            Net Banking
+        </div>
+        <hr>
+        <h4 style="font-family: Maiandra GD"> <b>Order Summary </b></h4>
+        <button type="submit" class="btn btn-primary">
+            Place Order
+        </button>
+        <button type="reset" class="btn btn-secondary">
+            Reset
+        </button>
+    </form>
+</div>
+</body>
+
+</html>
